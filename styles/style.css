@@ -1,0 +1,34 @@
+/* Variables */
+:root {
+  --backgound-color: #E5E5E5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--backgound-color);
+}
+
+/* header */
+.header {
+  padding: 5rem 20rem;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-option {
+  display: flex;
+}
