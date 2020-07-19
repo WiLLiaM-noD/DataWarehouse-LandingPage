@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --backgound-color: #E5E5E5;
+  --navbar-color: #212353;
 }
 
 *,
@@ -27,8 +28,31 @@ body {
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .nav-option {
+  margin-left: 5rem;
+  list-style: none;
+  flex: 0 0 30rem;
   display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navbar-color);
+}
+
+.nav-button {
+  margin-left: auto;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navbar-color);
+  background-color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10rem;
+  border: none;
+  box-shadow: 0 .5rem 1rem rgba(75, 93, 104, 0.1);
 }
