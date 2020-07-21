@@ -1,7 +1,9 @@
 /* Variables */
 :root {
-  --backgound-color: #E5E5E5;
+  --backgound-color: #f6fafd;
   --navbar-color: #212353;
+  --heading-text: #4b5d68;
+  --purple-primary: #9c69e2;
 }
 
 *,
@@ -10,6 +12,12 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+/* Adding local fonts */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica\ 400.ttf") format("ttf");
 }
 
 html {
@@ -37,7 +45,7 @@ body {
   flex: 0 0 30rem;
   display: flex;
   justify-content: space-between;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--navbar-color);
@@ -46,13 +54,56 @@ body {
 .nav-button {
   margin-left: auto;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--navbar-color);
   background-color: white;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2rem;
   border-radius: 10rem;
   border: none;
-  box-shadow: 0 .5rem 1rem rgba(75, 93, 104, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(75, 93, 104, 0.1);
+}
+
+.btn-arr {
+  margin-left: 0.6rem;
+  height: 14px;
+  width: 20px;
+}
+
+.jumbotron {
+  display: flex;
+}
+
+.heading__head--1 {
+  font-family: "Helvetica";
+  font-size: 8rem;
+  color: var(--navbar-color);
+  display: block;
+  margin-top: 13rem;
+  width: 60rem;
+}
+
+.heading__text {
+  margin-top: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  display: block;
+  width: 40rem;
+  line-height: 1.4;
+  color: var(--heading-text);
+}
+
+.heading__button {
+  background-color: var(--purple-primary);
+  color: #fff;
+  margin-top: 5rem;
+}
+
+.heading__img {
+  align-self: flex-end;
+  width: 88.5rem;
+  flex: 0 0 75rem;
+  margin-left: -10rem;
+  margin-bottom: -3rem;
 }
