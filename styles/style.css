@@ -30,7 +30,7 @@ body {
 }
 
 /* header */
-.header {
+#header {
   padding: 5rem 20rem;
 }
 
@@ -106,4 +106,41 @@ body {
   flex: 0 0 75rem;
   margin-left: -10rem;
   margin-bottom: -3rem;
+}
+
+/* About */
+#about {
+  padding: 5rem 20rem;
+}
+
+.about__container {
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 56rem;
+  margin-top: 5rem;
+}
+
+.about__container img {
+  flex: 0 0 47.7rem;
+  margin-left: 2rem;
+}
+
+.about__text {
+  margin: 0 9rem 0 6rem;
+}
+
+.about__text h3 {
+  color: var(--navbar-color);
+  font-size: 4rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.about__text p {
+  color: var(--heading-text);
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
