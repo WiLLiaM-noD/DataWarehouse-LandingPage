@@ -1,9 +1,10 @@
 /* Variables */
 :root {
   --backgound-color: #f6fafd;
-  --navbar-color: #212353;
   --heading-text: #4b5d68;
+  --blue-dark: #212353;
   --purple-primary: #9c69e2;
+  --base-font: "Open Sans", sans-serif;
 }
 
 *,
@@ -45,16 +46,16 @@ body {
   flex: 0 0 30rem;
   display: flex;
   justify-content: space-between;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--base-font);
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--navbar-color);
+  color: var(--blue-dark);
 }
 
 .nav-button {
   margin-left: auto;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--base-font);
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--navbar-color);
@@ -86,7 +87,7 @@ body {
 
 .heading__text {
   margin-top: 5rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--base-font);
   font-size: 2rem;
   display: block;
   width: 40rem;
@@ -132,15 +133,76 @@ body {
 }
 
 .about__text h3 {
-  color: var(--navbar-color);
+  color: var(--blue-dark);
   font-size: 4rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--base-font);
   margin-bottom: 4rem;
 }
 
 .about__text p {
   color: var(--heading-text);
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--base-font);
   line-height: 1.5;
+}
+
+/* Features */
+#features {
+  padding: 5rem 20rem;
+}
+
+#features > h3,
+#features > p {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#features > h3 {
+  color: var(--blue-dark);
+  font-size: 3.6rem;
+  font-family: var(--base-font);
+  margin-bottom: 2rem;
+}
+
+#features > p {
+  color: var(--heading-text);
+  font-size: 1.5rem;
+  font-family: var(--base-font);
+  width: 40%;
+  line-height: 1.5;
+}
+
+.feature {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.feature--1 {
+  display: flex;
+}
+
+.feature__img {
+  width: 20rem;
+}
+
+.feature__text {
+  background: rgba(104, 201, 186, 0.1);
+  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0% 100%);
+  border-radius: 5rem;
+  padding: 5rem 7rem 3rem 17rem;
+}
+
+.feature__text > h4 {
+  font-family: var(--base-font);
+  color: var(--blue-dark);
+  font-size: 2.4rem;
+}
+
+.feature__text > p {
+  font-family: var(--base-font);
+  color: var(--heading-text);
+  font-size: 1.5rem;
 }
