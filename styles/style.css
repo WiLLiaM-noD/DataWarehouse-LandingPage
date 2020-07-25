@@ -15,7 +15,13 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 4rem;
+  font-family: var(--base-font);
+  color: var(--blue-dark);
 }
 
 /* Adding local fonts */
@@ -82,7 +88,7 @@ body {
 .heading__head--1 {
   font-family: "Helvetica";
   font-size: 8rem;
-  color: var(--navbar-color);
+  color: var(--blue-dark);
   display: block;
   margin-top: 13rem;
   width: 60rem;
@@ -136,9 +142,6 @@ body {
 }
 
 .about__text h3 {
-  color: var(--blue-dark);
-  font-size: 4rem;
-  font-family: var(--base-font);
   margin-bottom: 4rem;
 }
 
@@ -162,9 +165,6 @@ body {
 }
 
 #features > h3 {
-  color: var(--blue-dark);
-  font-size: 3.6rem;
-  font-family: var(--base-font);
   margin-bottom: 2rem;
 }
 
@@ -179,7 +179,8 @@ body {
 .feature {
   margin-top: 7rem;
   display: grid;
-  gap: 10rem;
+  column-gap: 10rem;
+  row-gap: 5rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 35rem;
 }
@@ -241,4 +242,60 @@ body {
   border-radius: 0;
   box-shadow: none;
   padding: 0;
+}
+
+#testimonials {
+  padding: 5rem 20rem;
+}
+
+.testimonials__container {
+  background-color: var(--purple-primary);
+  border-radius: 5rem;
+  padding: 10.9rem 0 5rem 9.3rem;
+}
+
+.testimonials__container > h3 {
+  color: white;
+  display: inline-block;
+}
+
+.testimonials__single {
+  margin-top: 8.8rem;
+}
+
+.testimonial {
+  background-color: white;
+  width: 64.5rem;
+  border-radius: 2rem;
+  display: flex;
+  padding: 6rem;
+  box-shadow: 0 2rem rgba(79, 41, 88, 0.4);
+}
+
+.testimonial > img {
+  align-self: start;
+  margin-right: 3rem;
+  width: 9rem;
+  height: 9rem;
+}
+
+.testimonial__text > h5 {
+  font-size: 2.3rem;
+  font-family: var(--base-font);
+  color: var(--blue-dark);
+}
+
+.testimonial__text > h6 {
+  font-size: 2rem;
+  font-family: var(--base-font);
+  color: var(--purple-primary);
+}
+
+.testimonial__text > p {
+  margin-top: 1.9rem;
+  font-size: 1.8rem;
+  font-family: var(--base-font);
+  color: var(--heading-text);
+  line-height: 1.6;
+  font-weight: 300;
 }
