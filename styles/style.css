@@ -25,10 +25,10 @@ h3 {
 }
 
 /* Adding local fonts */
-@font-face {
+/* @font-face {
   font-family: "Helvetica";
   src: url("../fonts/Helvetica\ 400.ttf") format("ttf");
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -86,7 +86,6 @@ body {
 }
 
 .heading__head--1 {
-  font-family: "Helvetica";
   font-size: 8rem;
   color: var(--blue-dark);
   display: block;
@@ -112,9 +111,9 @@ body {
 
 .heading__img {
   align-self: flex-end;
-  width: 88.5rem;
+  width: 80rem;
   flex: 0 0 75rem;
-  margin-left: -10rem;
+  margin-left: -15rem;
   margin-bottom: -3rem;
 }
 
@@ -333,4 +332,69 @@ body {
   color: #fff;
   font-size: 3rem;
   font-weight: 900;
+}
+
+/* footer */
+
+#footer {
+  padding: 5rem 20rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr) 3rem;
+}
+
+.footer__head {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+}
+
+.footer__head__text > h4 {
+  font-family: var(--base-font);
+  color: var(--blue-dark);
+  font-size: 3rem;
+}
+
+.footer__head__text > p {
+  font-family: var(--base-font);
+  color: var(--heading-text);
+  font-size: 1.7rem;
+}
+
+.nav-button--purple {
+  background-color: #f063b8;
+  color: #fff;
+  margin-left: auto;
+  height: 4rem;
+}
+
+.nav-button--footer {
+  height: 4rem;
+  margin-left: 2rem;
+}
+
+.footer__brand {
+  background-color: #212353;
+  grid-column: 1 / 2;
+}
+
+.footer__about {
+  background: #9c69e2;
+  grid-column: 2 / 3;
+}
+
+.footer__help {
+  background-color: yellowgreen;
+  grid-column: 3 / 4;
+}
+
+.footer__social {
+  background-color: orangered;
+  grid-column: 4 / 5;
+}
+
+.footer__foot {
+  background-color: #4b5d68;
+  grid-column: 1 / -1;
 }
