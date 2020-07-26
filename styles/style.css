@@ -375,8 +375,32 @@ body {
 }
 
 .footer__brand {
-  background-color: #212353;
   grid-column: 1 / 2;
+}
+
+.brand > h6 {
+  color: var(--blue-dark);
+  font-size: 2rem;
+  font-family: var(--base-font);
+  margin-left: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.footer__brand > p {
+  color: var(--blue-dark);
+  font-size: 1.5rem;
+  font-family: var(--base-font);
+  font-weight: 600;
+}
+
+.footer__brand .info {
+  font-weight: 400;
+  margin-top: 1rem;
 }
 
 .footer__about {
