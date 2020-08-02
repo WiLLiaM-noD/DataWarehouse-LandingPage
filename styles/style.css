@@ -187,7 +187,7 @@ body {
   column-gap: 10rem;
   row-gap: 5rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 35rem;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .feature__base {
@@ -237,9 +237,9 @@ body {
   font-family: var(--base-font);
   color: var(--heading-text);
   font-size: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.5;
   font-weight: var(--font-medium);
-  height: 15rem;
+  height: 18.5rem;
 }
 
 .feature-btn {
@@ -466,3 +466,23 @@ body {
 .send__message {
   margin-left: auto;
 }
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+  .heading__img {
+    flex: 0 0 55rem;
+    align-self: center;
+    margin-left: auto;
+  }
+}
+
+/* @media (max-width: 1200px) {
+  .heading__img {
+    flex: 0 0 50rem;
+    align-self: center;
+    margin-top: 0;
+    margin-left: -10rem;
+  }
+} */
