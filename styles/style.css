@@ -489,7 +489,6 @@ body {
     width: 0;
     align-self: center;
     margin-top: 0;
-    margin-left: -5rem;
   }
   .feature__text > p {
     font-size: 1.3rem;
@@ -544,7 +543,20 @@ body {
 
   .feature__text > p {
     height: 20rem;
-  }
+	}
+	
+	.heading__img {
+		display: none;
+	}
+	
+	.about__container > img {
+		display: none;
+	}
+
+	.about__container {
+		padding: 10rem 0;
+		height: auto;
+	}
 
   .feature-btn {
     background-color: transparent;
@@ -553,5 +565,21 @@ body {
     padding: 0;
     margin-top: 1rem;
     font-size: 1.3rem;
-  }
+	}
+	
+	.feature__img {
+		width: 11rem;
+		right: 0;
+		left: auto;
+		top: -2rem;
+	}
+
+	.feature__text {
+		margin-left: 0;
+		
+	}
+
+	.feature__text > p {
+		height: 10rem;
+	}
 }
