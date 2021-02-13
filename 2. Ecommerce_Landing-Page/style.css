@@ -21,6 +21,7 @@ html {
   font-size: 62.5%;
 }
 
+h5,
 h1,
 h2,
 p {
@@ -118,7 +119,7 @@ header .container {
   grid-column: 1 / 2;
 }
 
-.container > img {
+header .container > img {
   object-fit: fill;
   margin: -16rem 0 0 0;
   grid-row: 1 / -1;
@@ -140,15 +141,75 @@ header .container {
 
 .circle--2,
 .circle--3,
-.circle--4 {
+.circle--4,
+.circle--5 {
   background-color: var(--yellow);
+  position: absolute;
 }
 
 .circle--2 {
   width: 22rem;
   height: 22rem;
-  position: absolute;
   z-index: 1000;
   top: -10rem;
   left: -5rem;
+}
+
+.circle--3 {
+  height: 11rem;
+  width: 11rem;
+  bottom: 20rem;
+  left: 70rem;
+}
+.circle--4 {
+  width: 6rem;
+  height: 6rem;
+  top: 14rem;
+  right: 70rem;
+}
+.circle--5 {
+  width: 6rem;
+  height: 6rem;
+  left: 3rem;
+  bottom: 40rem;
+  background-color: var(--background-button);
+}
+
+/* sub--1 */
+#sub--1 {
+  padding: 3rem 20rem 6rem 20rem;
+}
+
+#sub--1 > h1 {
+  font-size: 4.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#sub--1 > .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#sub--1 > .container > img {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  justify-self: center;
+}
+
+#sub--1 > .container > h5 {
+  color: var(--purple-primary);
+  font-size: 2.4rem;
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+#sub--1 > .container > h1 {
+  align-self: center;
+}
+
+#sub--1 > .container > p {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
