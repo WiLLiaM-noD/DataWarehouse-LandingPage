@@ -65,15 +65,20 @@ header > nav > ul {
 
 header > nav > ul > li {
   list-style: none;
-  font-size: 1.6rem;
-  font-weight: 600;
   font-family: var(--raleway);
-  color: #252b42;
   margin-right: 4rem;
 }
 
 header > nav > ul > li:first-child {
   margin-right: 13rem;
+}
+
+header > nav > ul > li > a:visited,
+header > nav > ul > li > a:link {
+  color: #252b42;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .btn-download {
