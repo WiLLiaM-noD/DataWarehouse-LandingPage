@@ -412,3 +412,81 @@ header .container > img {
 #footer p > span {
   font-weight: bold;
 }
+
+/* Media Query */
+@media (max-width: 1400px) {
+  #sub--4 > .container {
+    grid-template-columns: 40rem;
+    grid-template-rows: 20rem 10rem 1fr;
+    padding: 5rem;
+    padding-bottom: 0;
+    height: auto;
+  }
+  #sub--4 > .container > img {
+    margin-top: -10rem;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .circle {
+    display: none;
+  }
+  header > .container > img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #sub--1,
+  #sub--2,
+  #sub--3,
+  #sub--4 {
+    padding: 3rem 0 6rem 0;
+  }
+  #sub--2 > .container,
+  #sub--4 > .container {
+    border-radius: 0;
+  }
+  #sub--1 > .container,
+  #sub--2 > .container,
+  #sub--3 > .container,
+  #sub--4 > .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 10rem 1fr;
+  }
+  #sub--1 > .container > img,
+  #sub--2 > .container > img,
+  #sub--3 > .container > img {
+    grid-row: 3 / 4;
+  }
+  #sub--1 > .container > h1,
+  #sub--3 > .container > h1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+  #sub--1 > .container > p,
+  #sub--3 > .container > p {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+  #sub--1 > .container > button {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+  #sub--3 > .container > h5 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: center;
+  }
+}

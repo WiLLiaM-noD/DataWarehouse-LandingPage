@@ -1,12 +1,11 @@
 // Nav Link
 const navs = document.querySelectorAll('.nav__links');
-console.log(navs);
 
 navs.forEach(nav => {
   nav.addEventListener('click', e => {
     e.preventDefault();
     let childLink = nav.childNodes[1].getAttribute('href');
-    console.log(childLink);
+    // console.log(childLink);
     document.querySelector(childLink).scrollIntoView({
       behavior: 'smooth',
     });
