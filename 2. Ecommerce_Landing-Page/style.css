@@ -43,6 +43,15 @@ p {
   color: #737373;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+section {
+  transition: transform 1s, opacity 1s;
+}
+
 /* header */
 
 header {
@@ -431,7 +440,7 @@ header .container > img {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
 
@@ -526,5 +535,12 @@ header .container > img {
   }
   #footer img {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 50rem;
+    justify-self: center;
   }
 }
